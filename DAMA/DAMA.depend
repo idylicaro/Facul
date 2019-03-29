@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1553795643 source:c:\users\allucard.se\documents\dama\main.c
+	<stdio.h>
+	<stdlib.h>
+

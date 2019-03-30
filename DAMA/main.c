@@ -92,7 +92,14 @@ while((linhaD-linhaO)!=1){
     scanf("%i", &colunaD);
 }
 if(tabuleiro[linhaD][colunaD] == 'B'){
-        tabuleiro[linhaD][colunaD] = 'P';
+        if(colunaD>colunaO){
+        tabuleiro[linhaD+1][colunaD+1] = 'P';
+        tabuleiro[linhaD][colunaD] = 0;
+        tabuleiro[linhaO][colunaO] = 0;
+        pontos_pretos++;
+        }else if(colunaD<colunaO)
+        tabuleiro[linhaD+1][colunaD-1] = 'P';
+        tabuleiro[linhaD][colunaD] = 0;
         tabuleiro[linhaO][colunaO] = 0;
         pontos_pretos++;
         system("cls");
@@ -103,6 +110,7 @@ if(tabuleiro[linhaD][colunaD] == 'B'){
         system("cls");
         mostrar();
 }
+
 }
 
 void movimentacao_Branca(){
@@ -113,12 +121,23 @@ void movimentacao_Branca(){
     scanf("%i", &colunaD);
 }
     if(tabuleiro[linhaD][colunaD] == 'P'){
-        tabuleiro[linhaD][colunaD] = 'B';
+        if(colunaD>colunaO){
+        tabuleiro[linhaD-1][colunaD+1] = 'B';
+        tabuleiro[linhaD][colunaD] = 0;
         tabuleiro[linhaO][colunaO] = 0;
         pontos_brancos++;
         system("cls");
         mostrar();
-}else if(tabuleiro[linhaD][colunaD] == 0){
+}else if(colunaD<colunaO){
+    tabuleiro[linhaD-1][colunaD-1] = 'B';
+        tabuleiro[linhaD][colunaD] = 0;
+        tabuleiro[linhaO][colunaO] = 0;
+        pontos_brancos++;
+        system("cls");
+            mostrar();
+}
+}
+else if(tabuleiro[linhaD][colunaD] == 0){
     tabuleiro[linhaD][colunaD] = 'B';
         tabuleiro[linhaO][colunaO] = 0;
         system("cls");

@@ -24,7 +24,7 @@ void montar() {
               }else if(i == 2 && j % 2 == 0){
                   tabuleiro[i][j] = 'P';
               } else{
-                  tabuleiro[i][j] = ' ';
+                  tabuleiro[i][j] = '\xDB';
               }
 
           }else if(i >= 5 && i <= 7){
@@ -37,11 +37,15 @@ void montar() {
               }else if(i == 7  && j % 2 != 0){
                   tabuleiro[i][j] = 'B';
               } else{
-                  tabuleiro[i][j] = ' ';
+                  tabuleiro[i][j] = '\xDB';
               }
-          }else{
+          }else if(i == 3 && j % 2 == 0){
               //linhas vazias
-              tabuleiro[i][j] = ' ';
+              tabuleiro[i][j] = '\xDB';
+          }
+          else if(i == 4 && j % 2 != 0)
+          {
+              tabuleiro[i][j] = '\xDB';
           }
      }
     }
@@ -108,8 +112,8 @@ void movimentacao_Branca(){
     {
         if(colunaD>colunaO){
         tabuleiro[linhaD-1][colunaD+1] = 'B';
-        tabuleiro[linhaD][colunaD] = ' ';
-        tabuleiro[linhaO][colunaO] = ' ';
+        tabuleiro[linhaD][colunaD] = 0;
+        tabuleiro[linhaO][colunaO] = 0;
         pontos_brancos++;
         system("cls");
             mostrar();
@@ -117,8 +121,8 @@ void movimentacao_Branca(){
         else if(colunaD<colunaO)
         {
             tabuleiro[linhaD-1][colunaD-1] = 'B';
-        tabuleiro[linhaD][colunaD] = ' ';
-        tabuleiro[linhaO][colunaO] = ' ';
+        tabuleiro[linhaD][colunaD] = 0;
+        tabuleiro[linhaO][colunaO] = 0;
         pontos_brancos++;
         system("cls");
             mostrar();
@@ -126,7 +130,7 @@ void movimentacao_Branca(){
     }else
     {
                 tabuleiro[linhaD][colunaD] = 'B';
-            tabuleiro[linhaO][colunaO] = ' ';
+            tabuleiro[linhaO][colunaO] = 0;
             system("cls");
             mostrar();
 }

@@ -79,60 +79,44 @@ int verificarDiagonal(int linhaO, int colunaO, int linhaD, int colunaD){
 
 }
 void movimentacao_Preta(){
-if(tabuleiro[linhaD][colunaD] == 'B')
-    {
-        if(colunaD>colunaO){
-        tabuleiro[linhaD+1][colunaD+1] = 'P';
-        tabuleiro[linhaD][colunaD] = 0;
+while((linhaD-linhaO)!=1){
+    printf("Voce movimentou mais de uma casa !\n");
+    printf("Usuario(P) Digite a linha e coluna do Destino\n");
+    scanf("%i", &linhaD);
+    scanf("%i", &colunaD);
+}
+if(tabuleiro[linhaD][colunaD] == 'B'){
+        tabuleiro[linhaD][colunaD] = 'P';
         tabuleiro[linhaO][colunaO] = 0;
         pontos_pretos++;
         system("cls");
-            mostrar();
-        }
-        else if(colunaD<colunaO)
-        {
-            tabuleiro[linhaD+1][colunaD-1] = 'P';
-        tabuleiro[linhaD][colunaD] = 0;
+        mostrar();
+}else if(tabuleiro[linhaD][colunaD] == 0){
+    tabuleiro[linhaD][colunaD] = 'P';
         tabuleiro[linhaO][colunaO] = 0;
-        pontos_pretos++;
         system("cls");
-            mostrar();
-        }
-    }else
-    {
-                tabuleiro[linhaD][colunaD] = 'P';
-            tabuleiro[linhaO][colunaO] = 0;
-            system("cls");
-            mostrar();
-    }
+        mostrar();
+}
 }
 
 void movimentacao_Branca(){
-    if(tabuleiro[linhaD][colunaD] == 'P')
-    {
-        if(colunaD>colunaO){
-        tabuleiro[linhaD-1][colunaD+1] = 'B';
-        tabuleiro[linhaD][colunaD] = 0;
+    while((linhaO-linhaD)!=1){
+    printf("Voce movimentou mais de uma casa !\n");
+    printf("Usuario(P) Digite a linha e coluna do Destino\n");
+    scanf("%i", &linhaD);
+    scanf("%i", &colunaD);
+}
+    if(tabuleiro[linhaD][colunaD] == 'P'){
+        tabuleiro[linhaD][colunaD] = 'B';
         tabuleiro[linhaO][colunaO] = 0;
         pontos_brancos++;
         system("cls");
-            mostrar();
-        }
-        else if(colunaD<colunaO)
-        {
-            tabuleiro[linhaD-1][colunaD-1] = 'B';
-        tabuleiro[linhaD][colunaD] = 0;
+        mostrar();
+}else if(tabuleiro[linhaD][colunaD] == 0){
+    tabuleiro[linhaD][colunaD] = 'B';
         tabuleiro[linhaO][colunaO] = 0;
-        pontos_brancos++;
         system("cls");
-            mostrar();
-        }
-    }else
-    {
-                tabuleiro[linhaD][colunaD] = 'B';
-            tabuleiro[linhaO][colunaO] = 0;
-            system("cls");
-            mostrar();
+        mostrar();
 }
 }
 
@@ -168,7 +152,7 @@ usuarioAtual = 'P';
         estarDentroTabuleiro(linhaD, colunaD)){
         //3.1 - Vericar se é Diagonal
         if(verificarDiagonal(linhaO, colunaO, linhaD, colunaD)){
-            printf("MOVIMENTAÇÃO VÁLIDA: %c\n", usuarioAtual);
+
         }
         //verificar se o movimento nao esta obstruido
         while(tabuleiro[linhaD][colunaD] == 'P')
@@ -187,8 +171,10 @@ usuarioAtual = 'P';
         estarDentroTabuleiro(linhaD, colunaD)){
         //3.1 - Vericar se é Diagonal
         if(verificarDiagonal(linhaO, colunaO, linhaD, colunaD)){
-            printf("MOVIMENTACAO VALIDA: %c\n", usuarioAtual);
-            movimentacao_Preta();
+
+
+        }else{
+            printf("Movimento Invalido digite,N e DIAGONAL!!!\n");
         }
         }else{
             printf("MOVIMENTACAO INVALIDA para o usuario: %c\n", usuarioAtual);
@@ -222,27 +208,30 @@ usuarioAtual = 'P';
         estarDentroTabuleiro(linhaD, colunaD)){
         //3.1 - Vericar se é Diagonal
         if(verificarDiagonal(linhaO, colunaO, linhaD, colunaD)){
-            printf("MOVIMENTAÇÃO VÁLIDA: %c\n", usuarioAtual);
+            printf("MOVIMENTACAO VALIDA: %c\n", usuarioAtual);
         }
         //verificar se o movimento nao esta obstruido
         while(tabuleiro[linhaD][colunaD] == 'B')
         {
             printf("ha uma peca Branca impossibilitando sua jogada!!!\n");
-            printf("Jogador(P) Digite a linha e coluna da Peca\n");
+            printf("Jogador(B) Digite a linha e coluna da Peca\n");
     scanf("%i", &linhaO);
     scanf("%i", &colunaO);
     usuarioAtual = 'B';
-    printf("Usuario(P) Digite a linha e coluna do Destino\n");
+    printf("Usuario(B) Digite a linha e coluna do Destino\n");
     scanf("%i", &linhaD);
-    scanf("%i", &colunaD);system("cls");
+    scanf("%i", &colunaD);
+    system("cls");
         }
         //3.0 - Verificar se estar dentro do Tabuleiro
     if( estarDentroTabuleiro(linhaO, colunaO) &&
         estarDentroTabuleiro(linhaD, colunaD)){
         //3.1 - Vericar se é Diagonal
         if(verificarDiagonal(linhaO, colunaO, linhaD, colunaD)){
-            printf("MOVIMENTACAO VALIDA: %c\n", usuarioAtual);
 
+
+        }else{
+            printf("Movimento Invalido digite,N e DIAGONAL!!!\n");
         }
         }else{
             printf("MOVIMENTACAO INVALIDA para o usuario: %c\n", usuarioAtual);

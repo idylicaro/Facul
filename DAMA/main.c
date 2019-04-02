@@ -196,6 +196,7 @@ else if(tabuleiro[linhaD][colunaD] == 0){
 
 int main()
 {
+int rodada;
 montar();
 
     do{
@@ -320,7 +321,16 @@ usuarioAtual = 'P';
         }
         movimentacao_Branca();
     }
+    rodada++;
     }while(pontos_brancos != 12 || pontos_pretos != 12);
 
+    printf("\nRodadas : %i\n",rodada);
+    if(pontos_brancos == 12){
+        printf("Jogador (B) Ganhou!\n");
+        printf("Comeu %i pecas\n",pontos_brancos);
+    }else if(pontos_pretos == 12){
+        printf("Jogador (P) Ganhou!\n");
+            printf("Comeu %i pecas\n",pontos_pretos);
+    }
     return 0;
 }

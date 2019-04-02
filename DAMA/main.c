@@ -59,6 +59,7 @@ void mostrar() {
          printf("\n");
      }
 }
+
 int estarDentroTabuleiro(int linha, int coluna){
     return (linha >= 0 && linha <= 7) &&
         (coluna >= 0 && coluna <= 7);
@@ -91,19 +92,39 @@ while((linhaD-linhaO)!=1){
     scanf("%i", &linhaD);
     scanf("%i", &colunaD);
 }
+
 if(tabuleiro[linhaD][colunaD] == 'B'){
+
+
         if(colunaD>colunaO){
+        while(((tabuleiro[linhaD+1][colunaD+1])<0 || (tabuleiro[linhaD+1][colunaD+1])> 7 )|| tabuleiro[linhaD-1][colunaD+1] != 0){
+    printf("Movimento invalido!Nao pode comer a peca , pois n tem casa disponivel apos a peca\n");
+      printf("Usuario(P) Digite a linha e coluna do Destino\n");
+        scanf("%i", &linhaD);
+        scanf("%i", &colunaD);
+}
+        //
         tabuleiro[linhaD+1][colunaD+1] = 'P';
         tabuleiro[linhaD][colunaD] = 0;
         tabuleiro[linhaO][colunaO] = 0;
         pontos_pretos++;
-        }else if(colunaD<colunaO)
+
+        }else if(colunaD<colunaO){
+        while(((tabuleiro[linhaD+1][colunaD-1])<0 || (tabuleiro[linhaD+1][colunaD-1])> 7 )|| tabuleiro[linhaD-1][colunaD+1] != 0){
+    printf("Movimento invalido!Nao pode comer a peca , pois n tem casa disponivel apos a peca\n");
+      printf("Usuario(P) Digite a linha e coluna do Destino\n");
+        scanf("%i", &linhaD);
+        scanf("%i", &colunaD);
+}
+        //
         tabuleiro[linhaD+1][colunaD-1] = 'P';
         tabuleiro[linhaD][colunaD] = 0;
         tabuleiro[linhaO][colunaO] = 0;
         pontos_pretos++;
         system("cls");
         mostrar();
+
+}
 }else if(tabuleiro[linhaD][colunaD] == 0){
     tabuleiro[linhaD][colunaD] = 'P';
         tabuleiro[linhaO][colunaO] = 0;
@@ -116,19 +137,36 @@ if(tabuleiro[linhaD][colunaD] == 'B'){
 void movimentacao_Branca(){
     while((linhaO-linhaD)!=1){
     printf("Voce movimentou mais de uma casa !\n");
-    printf("Usuario(P) Digite a linha e coluna do Destino\n");
+    printf("Usuario(B) Digite a linha e coluna do Destino\n");
     scanf("%i", &linhaD);
     scanf("%i", &colunaD);
 }
+
     if(tabuleiro[linhaD][colunaD] == 'P'){
+
         if(colunaD>colunaO){
+        while(((tabuleiro[linhaD-1][colunaD+1])<0 || (tabuleiro[linhaD-1][colunaD+1])> 7 )|| tabuleiro[linhaD-1][colunaD+1] != 0){
+    printf("Movimento invalido!Nao pode comer a peca , pois n tem casa disponivel apos a peca\n");
+      printf("Usuario(B) Digite a linha e coluna do Destino\n");
+        scanf("%i", &linhaD);
+        scanf("%i", &colunaD);
+}
+        //
         tabuleiro[linhaD-1][colunaD+1] = 'B';
         tabuleiro[linhaD][colunaD] = 0;
         tabuleiro[linhaO][colunaO] = 0;
         pontos_brancos++;
         system("cls");
         mostrar();
+
 }else if(colunaD<colunaO){
+    while(((tabuleiro[linhaD-1][colunaD-1])<0 || (tabuleiro[linhaD-1][colunaD-1])> 7 ) || tabuleiro[linhaD-1][colunaD-1] != 0){
+      printf("Movimento invalido!Nao pode comer a peca , pois n tem casa disponivel apos a peca\n");
+      printf("Usuario(B) Digite a linha e coluna do Destino\n");
+        scanf("%i", &linhaD);
+        scanf("%i", &colunaD);
+}
+    //
     tabuleiro[linhaD-1][colunaD-1] = 'B';
         tabuleiro[linhaD][colunaD] = 0;
         tabuleiro[linhaO][colunaO] = 0;
@@ -136,7 +174,18 @@ void movimentacao_Branca(){
         system("cls");
             mostrar();
 }
+
+
+
+    }else if(tabuleiro[linhaD][colunaD] == 0){
+    tabuleiro[linhaD][colunaD] = 'B';
+        tabuleiro[linhaO][colunaO] = 0;
+        system("cls");
+        mostrar();
 }
+
+
+
 else if(tabuleiro[linhaD][colunaD] == 0){
     tabuleiro[linhaD][colunaD] = 'B';
         tabuleiro[linhaO][colunaO] = 0;

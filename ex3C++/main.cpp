@@ -7,11 +7,16 @@ int main()
 {
 void entrada(int &h, int &m);
 char conversao(int &h, int &m);
+void saida(int ht,int mt,char tp);
+
     int hora,minutos;
     char z;
 
     entrada(hora,minutos);
     z=conversao(hora,minutos);
+    saida(hora,minutos,z);
+
+
 
 
 
@@ -35,6 +40,14 @@ char conversao(int &h, int &m){
     h-=12;
     return 'P';
     }
-
+}
+void saida(int ht,int mt,char tp){
+    if(tp=='A'){
+        printf("\nA hora e: %i:%i A.M\n",ht,mt);
+    }else if(tp=='P'){
+        printf("\nA hora e: %i:%i P.M\n",ht,mt);
+    }
 
 }
+
+

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <math.h>
+
 int main()
 {
     setlocale(LC_ALL,"Portuguese");
@@ -10,23 +11,35 @@ int main()
 
     int n;
     double catetoA,catetoB,hipotenusa;
+    double xa,ya,xb,yb;
 
-        do{
-           printf("Digite o cateto (A) e (B):\n");
-           scanf("%lf %lf",&catetoA,&catetoB);
 
-            hipotenusa = calcHipotenusa(catetoA,catetoB);
+    do
+    {
+        printf("Digite o cateto (Xa) e (Ya):\n");
+        scanf("%lf %lf",&xa,&ya);
 
-            printf("A Hipotenusa é :%.2lf\n",hipotenusa);
+        printf("Digite o cateto (Xb) e (Yb):\n");
+        scanf("%lf %lf",&xb,&yb);
 
-            printf("Quer fazer outro calculo ?\n (1)Sim (0)Não\n");
-            scanf("%i",&n);
+        catetoA = (xb-xa);
+        catetoB = (yb-ya);
 
-        }while(n==1);
+        hipotenusa = calcHipotenusa(catetoA,catetoB);
+
+        printf("A Distancia Ã©  :%.2lf\n",hipotenusa);
+
+        printf("Quer fazer outro calculo ?\n (1)Sim (0)NÃ£o\n");
+        scanf("%i",&n);
+
+    }
+    while(n==1);
 
     return 0;
 }
-double calcHipotenusa(double a,double b){
+
+double calcHipotenusa(double a,double b)
+{
     double resultado;
 
     resultado = (a*a)+(b*b);

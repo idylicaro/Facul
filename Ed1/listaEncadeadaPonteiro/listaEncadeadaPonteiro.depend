@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1574192356 source:c:\users\alucard\desktop\estruturadedadosc++\listaencadeadaponteiro\main.cpp
+	<iostream>
+	<locale.h>
+	<stdlib.h>
+	"Lista_Ponteiro.h"
+
+1574294720 c:\users\alucard\desktop\estruturadedadosc++\listaencadeadaponteiro\lista_ponteiro.h
+
+1574192358 source:c:\users\dracula castle\desktop\estruturadedadosc++\listaencadeadaponteiro\main.cpp
+	<iostream>
+	<locale.h>
+	<stdlib.h>
+	"Lista_Ponteiro.h"
+
+1574294824 c:\users\dracula castle\desktop\estruturadedadosc++\listaencadeadaponteiro\lista_ponteiro.h
+

@@ -1,0 +1,23 @@
+1420;São Carlos;SP 310S;08/09/2001;Sábado;03:00;Capotamento;0;0;V unico por motivo a ser esclarecido, perdeu controle, capotando sobre a via.
+1421;São Carlos;SP 215;08/09/2001;Sábado;04:30;Choque/Obstáculo Fixo;0;0;V unico, devido estouro de pneu, perdeu controle, vindo a cruzar a via, após chocou-se contra barranco em acost/direito, sentido contrario.
+1422;Guariba;SPV 044;08/09/2001;Sábado;15:00;Tombamento;0;0;V unico devido estouro de pneu, perdeu controle, tombando em acost/esquerdo.
+1423;Pitangueiras;SP 322;13/09/2001;Quinta-feira;07:30;Colisão/transversal;0;0;V 1 em trevo e ao cruzar a via sem os devidos cuidados, foi col/transv. por V 2.
+1424;São Carlos;SP 310N;08/09/2001;Sábado;15:40;Atrop/pedestre;1;1;Atrop/pedestre.
+1425;São Carlos;SP 310N;08/09/2001;Sábado;17:40;Atrop/animal;0;0;Atrop/animal(canino).
+1426;Taquaritinga;SP 310S;08/09/2001;Sábado;20:30;Choque/Obstáculo Fixo;0;1;V unico em alça de acesso e devido problemas com freio, perdeu controle, chocando-se contra defensa e capotando a sua esquerda.
+1427;Ibitinga;SP 317;09/09/2001;Domingo;03:40;Colisão/frontal;0;3;V 1 ao adentrar a via sem os devidos cuidados, col/front. em V 2 que seguia sent/Itapolis à SP 304, após ambos imobilizaran-se em acost/direito.
+1428;Rincão;SP 318;09/09/2001;Domingo;10:50;Colisão/lateral;0;1;V 1 ao sair para acost/direito, e ao retornar a via e devido a degrau entre a pista e a faixa, perdeu controle, col/lat. em V 2 sent/contrario.
+1429;Nova Europa;SP 331;09/09/2001;Domingo;14:15;Capotamento;0;2;V 1 devido estouro do pneu, capotou e veio a col/transv. V 2, que seguia sent/contrario.
+1430;Araraquara;SP 310N;09/09/2001;Domingo;16:15;Tombamento;0;2;V unico perdeu controle, saindo para acostamento e devido a desnivel entre a faixa e acost/direito, tombou além do mesmo.
+1431;Monte Alto;SP 323;09/09/2001;Domingo;17:20;Choque/Obstáculo Fixo;0;0;V 1 atingido em seu para-brisa, por pedriscos(local em obras de recapeamento), projetadados das rodas de V ignorado que seguia em sua frente.
+1432;São Carlos;149/215;09/09/2001;Domingo;17:30;Colisão/lateral;0;1;V 1 e 2 sent/Broa/S.Carlos, momento que V 1 sinalizou para adentrar a esquerda, sendo col/lat. por V 2 que seguia logo atrás, após V 1 veio a chocar-se contra postes de sinalização em acost/direito.
+1433;Jaboticabal;SP 333;09/09/2001;Domingo;17:45;Capotamento;0;3;V 1 que invadiu faixa contraria e evadiu-se, momento que V 2 perdeu controle, capotando além acost/direito.
+1434;São Carlos;SP 310S;09/09/2001;Domingo;20:10;Atrop/animal;0;0;Atrop/animal(canino).
+1435;São Carlos;SP 310S;09/09/2001;Domingo;22:40;Colisão/traseira;0;2;V 2 que evadiu-se, ao reduzir marcha bruscamente, foi col/tras. por V 1.
+1436;Tabatinga;SP 331;10/09/2001;Segunda-feira;05:30;Colisão/traseira;0;2;V 2 devido a problemas mecânico, transitava devagar, momento que foi col/tras. por V 1.
+1437;Guariba;SPV 044;10/09/2001;Segunda-feira;08:15;Choque/Obstáculo Fixo;0;0;V unico devido estouro de pneu, chocou-se contra barranco, além acost/direito.
+1438;São Carlos;SP 310N;10/09/2001;Segunda-feira;11:00;Choque/Obstáculo Fixo;0;0;V 1 em alça de acesso, ao reduzir velocidade e parar,  momento que V 1 chocou-se em sua traseira. 
+1439;Ibitinga;SP 321;10/09/2001;Segunda-feira;15:30;Choque/Obstáculo Fixo;1;0;V unico, por motivo a ser esclarecido,  perdeu controle, chocando-se contra placa indicativa. além acost/direito.
+1440;Américo Brasiliense;SP 257;10/09/2001;Segunda-feira;18:30;Tombamento;0;0;V unico devido a avarias mecânica, perdeu controle, tombando em acost/esquerdo.
+1441;Monte Alto;SP 323;10/09/2001;Segunda-feira;19:20;Choque/Obstáculo Fixo;0;0;Choque do V unico perdeu controle, chocando-se contra barreiras plasticas de pedagio.
+1442;Araraquara;SP 310S;11/09/2001;Terça-feira;08:30;Atrop/animal;0;0;Atrop/animal(canino).

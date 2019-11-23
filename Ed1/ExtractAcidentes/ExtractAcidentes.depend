@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1574474422 source:c:\users\dracula castle\desktop\estruturadedados\extractacidentes\inputbackendfunction.cpp
+	"InputBackend.h"
+
+1574474451 c:\users\dracula castle\desktop\estruturadedados\extractacidentes\inputbackend.h
+	"listaSencadeada.h"
+
+1574472572 c:\users\dracula castle\desktop\estruturadedados\extractacidentes\listasencadeada.h
+	<iostream>
+	<fstream>
+	<string>
+
+1574473360 source:c:\users\dracula castle\desktop\estruturadedados\extractacidentes\listaencadeada.cpp
+	"listaSencadeada.h"
+
+1574474537 source:c:\users\dracula castle\desktop\estruturadedados\extractacidentes\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<locale.h>
+	"listaSencadeada.h"
+	"InputBackend.h"
+
